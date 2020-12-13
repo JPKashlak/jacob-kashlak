@@ -7,7 +7,9 @@ body {
 
 .section-title {
     border-bottom: 4px solid purple;
+    text-align: center;    
 }
+
 
 /* Header and Nav */
 header {
@@ -15,8 +17,6 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     z-index: 9999;
-    position: sticky;
-    top: 0;
     background-color: black;
 }
 .ninelogo img {
@@ -47,19 +47,30 @@ header ul li a:hover {
     color: black;
 }
 
+
 /* Hero */
+.hero .section-title {
+    width: 5%;
+    margin: 0 auto;
+}
 .hero-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .hero .grid-cell {
     justify-content: center;
     align-items: center;
 }
+
 .hero img {
     height: 419px;
     width: 360px;
     filter: grayscale(100%);
     border-radius: 50%;
+}
+.hero .grid-cell p {
+    font-size: 20px;
 }
