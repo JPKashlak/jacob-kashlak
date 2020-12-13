@@ -95,8 +95,7 @@ header nav ul li a:hover {
     grid-template-columns: repeat(3, 20%);
     grid-template-rows: repeat(3, 20%);
     gap: 5px;
-    margin-left: 10%;
-    margin-right: 10%;
+   
 }
 .app1, .app2, .app3, .app4, .app5, .app6 {
     overflow: hidden;
@@ -135,4 +134,20 @@ header nav ul li a:hover {
 .contact a:hover {
     font-size: 35px;
     color: slateblue;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer p {
+    margin-left: 15px;
+}
+footer .ninelogo {
+    transform: rotate(180deg);
+    height: 100px;
+    width: 100px;
+    margin: 15px;
 }
