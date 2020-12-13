@@ -42,10 +42,12 @@ header nav ul li a {
     text-decoration: none;
     justify-content: center;
     align-items: center;
+    transition-property: font-size color;
+    transition-duration: .5s;
 }
-header ul li a:hover {
-    background-color: silver;
-    color: black;
+header nav ul li a:hover {
+    color: slateblue;
+    font-size: 35px;
 }
 
 
@@ -86,4 +88,10 @@ header ul li a:hover {
     font-size: 25px;
     color: silver;
     text-decoration: none;
+    transition-property: font-size color;
+    transition-duration: .5s;
+}
+.contact a:hover {
+    font-size: 35px;
+    color: slateblue;
 }
