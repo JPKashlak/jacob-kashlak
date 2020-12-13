@@ -6,17 +6,18 @@ body {
 }
 
 .section-title {
-    border-bottom: 4px solid purple;
-    text-align: center;    
+    text-align: center;
 }
 
+.title-contain {
+    border-bottom: purple solid 4px;
+}
 
 /* Header and Nav */
 header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    z-index: 9999;
     background-color: black;
 }
 .ninelogo img {
@@ -50,7 +51,6 @@ header ul li a:hover {
 
 /* Hero */
 .hero .section-title {
-    width: 5%;
     margin: 0 auto;
 }
 .hero-grid {
@@ -74,3 +74,5 @@ header ul li a:hover {
 .hero .grid-cell p {
     font-size: 20px;
 }
+
+/* Contact */
