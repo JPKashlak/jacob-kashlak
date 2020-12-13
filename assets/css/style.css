@@ -1,10 +1,12 @@
 
 body {
     background-color: black;
+    color: silver;
     font-family: Arial, Helvetica, sans-serif;
 }
-h1 {
-    color: silver;
+
+.section-title {
+    border-bottom: 4px solid purple;
 }
 
 /* Header and Nav */
@@ -17,12 +19,9 @@ header {
     top: 0;
     background-color: black;
 }
-header img {
-    height: 75px;
-    width: 75px;
-    filter: grayscale(100%);
-    border-radius: 15%;
-    justify-content: flex-start;
+.ninelogo img {
+    height: 100px;
+    width: 100px;
 }
 header h1 {
     font-size: 50px;
@@ -32,18 +31,35 @@ header nav {
    justify-content: flex-end;
    text-align: right;
 }
-header ul li a {
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li a {
     color: silver;
     font-size: 25px;
-    margin: 50px;
     text-decoration: none;
     justify-content: center;
     align-items: center;
 }
-
+header ul li a:hover {
+    background-color: silver;
+    color: black;
+}
 
 /* Hero */
+.hero-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+.hero .grid-cell {
+    justify-content: center;
+    align-items: center;
+}
 .hero img {
     height: 419px;
     width: 360px;
+    filter: grayscale(100%);
+    border-radius: 50%;
 }
