@@ -189,7 +189,20 @@ header nav {
 .title-cell {
     margin-top: 10px;
 }
-
+.work-grid {
+    grid-template-columns: repeat(3, 175px);
+    grid-template-rows: repeat(3, 175px);   
+}
 @media screen and (max-width: 768px) {
 
+}
+@media screen and (max-width: 575px) {
+.work-grid {
+    grid-template-columns: 150px;
+    grid-template-rows: repeat(6, 150px); 
+}
+.work-grid .app1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
 }
